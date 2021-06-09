@@ -5,25 +5,53 @@ import {
   CardCard,
   CardImg,
   CardImgContainer,
-  CardIcon1,
-  CardCardTitle,
-  CardCardText,
+  CardArrowContainer,
 } from './card.styles';
-import FileImg from '../../../src/images/f4cloud.jpg';
+import d1 from '../../images/d1.jpg';
+import d2 from '../../images/hun1.jpg';
+import d3 from '../../images/hun2.jpg';
+import d4 from '../../images/hun3.jpg';
+import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from 'react-icons/fa';
+
 const Card = () => {
   return (
     <div>
       <CardContent>
         <CardContainer>
+          <CardArrowContainer>
+            <FaRegArrowAltCircleLeft />
+          </CardArrowContainer>
           <CardCardContent>
             <CardCard>
               <CardImgContainer>
-                <CardImg src={FileImg} alt="File Img" />
+                <CardImg src={d1} alt="File Img" />
               </CardImgContainer>
-              <CardCardTitle>파일 명</CardCardTitle>
-              <CardCardText>파일 연 시간</CardCardText>
             </CardCard>
           </CardCardContent>
+          <CardCardContent>
+            <CardCard>
+              <CardImgContainer>
+                <CardImg src={d2} alt="File Img" />
+              </CardImgContainer>
+            </CardCard>
+          </CardCardContent>
+          <CardCardContent>
+            <CardCard>
+              <CardImgContainer>
+                <CardImg src={d3} alt="File Img" />
+              </CardImgContainer>
+            </CardCard>
+          </CardCardContent>
+          <CardCardContent>
+            <CardCard>
+              <CardImgContainer>
+                <CardImg src={d4} alt="File Img" />
+              </CardImgContainer>
+            </CardCard>
+          </CardCardContent>
+          <CardArrowContainer>
+            <FaRegArrowAltCircleRight />
+          </CardArrowContainer>
         </CardContainer>
       </CardContent>
     </div>

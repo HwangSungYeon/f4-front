@@ -9,6 +9,7 @@ export const UserAside = styled.section`
   justify-content: flex;
   align-items: felx-start;
   margin: 0;
+  background: #1d1d1d;
 `;
 export const DropdownWrapper = styled.section`
   display: flex;
@@ -18,13 +19,22 @@ export const DropdownWrapper = styled.section`
   align-items: center;
   margin: 4rem;
 `;
+
+export const UserCardContainer = styled(Container)`
+  display: flex;
+  flex-direction: width;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  ${Container};
+`;
+
 export const UserWrapper = styled.section`
   display: flex;
   column: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10rem 0;
 `;
 export const UserContainer = styled(Container)`
   display: flex;
@@ -102,6 +112,7 @@ export const UserContentContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const UserTabContainer = styled.div`
   display: flex;
   justify-content: center;
