@@ -11,8 +11,9 @@ export const CardContent = styled.section`
 `;
 export const CardContainer = styled(Container)`
   display: flex;
-  flex-direction: column;
+  flex-direction: width;
   justify-content: space-between;
+  margin-right: 10rem;
   align-items: center;
   padding: 1.5rem 1.5rem;
   ${Container};
@@ -37,6 +38,7 @@ export const CardTitle = styled.h2`
   font-size: clamp(2rem, 8.5vw, 5rem);
   font-weight: bold;
 `;
+
 export const CardCardContent = styled.div`
   display: flex;
   justify-content: space-between;
@@ -46,13 +48,22 @@ export const CardCardContent = styled.div`
     flex-direction: column;
   }
 `;
+
+export const CardArrowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  align-items: center;
+`;
+
 export const CardCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 25rem;
-  height: 25rem;
+  width: 18rem;
+  height: 14rem;
   background-color: #fff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
   border-radius: 20px;
@@ -92,8 +103,6 @@ export const CardCard = styled.div`
 export const CardImgContainer = styled.div`
   width: 9rem;
   height: 9rem;
-  border-radius: 50%;
-  border: 2px solid #333;
   transition: all 0.3s ease-out;
   margin-top: 2rem;
   margin-bottom: 3rem;

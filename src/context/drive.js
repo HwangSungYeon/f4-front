@@ -28,6 +28,8 @@ const DriveProvider = ({ children }) => {
 
   useEffect(() => {
     if (authTokens) {
+      setFolders(null);
+      setFiles(null);
       console.log('진행됨');
       loadFiles();
     }
